@@ -6,3 +6,5 @@ const DOMSelectors = {
   price: document.querySelector(".price"),
   category: document.querySelector(".category"),
 };
+
+export { DOMSelectors };

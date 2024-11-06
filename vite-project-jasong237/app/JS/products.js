@@ -16,3 +16,5 @@ const products = [
   { name: "EOA", price: 500, category: "Faces, Rares" },
   { name: "CHICK", price: 300, category: "Hats" },
 ];
+
+export { products };
