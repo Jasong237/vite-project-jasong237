@@ -1,26 +1,111 @@
 const products = [
-  { name: "SSHF", price: 120, category: "Faces" },
-  { name: "PV", price: 60, category: "Faces" },
-  { name: "SKOTN", price: 300, category: "Hats" },
-  { name: "GTH", price: 20, category: "Hats" },
-  { name: "ASTRA", price: 1000, category: "Hats" || "Rares" },
-  { name: "BBM", price: 55, category: "Faces" },
-  { name: "PQOTN", price: 180, category: "Hats" },
-  { name: "MBSTF", price: 550, category: "Hats" || "Rares" },
-  { name: "YUM", price: 350, category: "Faces" },
-  { name: "CWHP", price: 500, category: "Hats" },
-  { name: "GSTF", price: 600, category: "Hats" || "Rares" },
-  { name: "FRZN", price: 550, category: "Hats" },
-  { name: "RT", price: 800, category: "Faces" || "Rares" },
-  { name: "RDC", price: 50, category: "Hats" },
-  { name: "EOA", price: 500, category: "Faces" || "Rares" },
-  { name: "CHICK", price: 300, category: "Hats" },
+  {
+    name: "Smartphone",
+    price: 799,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+  },
+  {
+    name: "Bluetooth Headphones",
+    price: 149,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+  },
+  {
+    name: "Smartwatch",
+    price: 199,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+  },
+  {
+    name: "Laptop",
+    price: 1299,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+  },
+  {
+    name: "Leather Wallet",
+    price: 39.99,
+    image: "https://via.placeholder.com/150",
+    category: "Accessories",
+  },
+  {
+    name: "Wristwatch",
+    price: 89.99,
+    image: "https://via.placeholder.com/150",
+    category: "Accessories",
+  },
+  {
+    name: "Sunglasses",
+    price: 59.99,
+    image: "https://via.placeholder.com/150",
+    category: "Accessories",
+  },
+  {
+    name: "Messenger Bag",
+    price: 79.99,
+    image: "https://via.placeholder.com/150",
+    category: "Accessories",
+  },
+  {
+    name: "Electric Kettle",
+    price: 39.99,
+    image: "https://via.placeholder.com/150",
+    category: "Kitchen",
+  },
+  {
+    name: "Blender",
+    price: 69.99,
+    image: "https://via.placeholder.com/150",
+    category: "Kitchen",
+  },
+  {
+    name: "Air Fryer",
+    price: 129.99,
+    image: "https://via.placeholder.com/150",
+    category: "Kitchen",
+  },
+  {
+    name: "Coffee Maker",
+    price: 49.99,
+    image: "https://via.placeholder.com/150",
+    category: "Kitchen",
+  },
+  {
+    name: "T-shirt",
+    price: 19.99,
+    image: "https://via.placeholder.com/150",
+    category: "Clothing",
+  },
+  {
+    name: "Jeans",
+    price: 39.99,
+    image: "https://via.placeholder.com/150",
+    category: "Clothing",
+  },
+  {
+    name: "Sneakers",
+    price: 79.99,
+    image: "https://via.placeholder.com/150",
+    category: "Clothing",
+  },
+  {
+    name: "Hoodie",
+    price: 49.99,
+    image: "https://via.placeholder.com/150",
+    category: "Clothing",
+  },
 ];
 
-const categories = ["Hats", "Rares", "Faces"];
-const rares = products.filter((product) => product.category === "Rares");
-const hats = products.filter((product) => product.category === "Hats");
-const faces = products.filter((product) => product.category === "Faces");
-export { products };
+const electronics = products.filter(
+  (product) => product.category === "Electronics"
+);
+const accessories = products.filter(
+  (product) => product.category === "Accessories"
+);
+const clothing = products.filter((product) => product.category === "Clothing");
+const kitchen = products.filter((product) => product.category === "Kitchen");
 
-console.log("Rares", rares);
+export { products, kitchen, clothing, accessories, electronics };
+
+console.log("Kitchen", kitchen);

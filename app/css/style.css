@@ -26,8 +26,8 @@ html, body, * {
 }
 
 .card{
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   border: 15px solid rgb(80, 0, 154);
   background-color: rgb(80, 0, 154);
   border-radius: 5%;
@@ -39,20 +39,28 @@ html, body, * {
 }
 
 
-.product-name{
-  font-size: 80px;
+ .product-name {
+  font-size: 60px;
   text-align: center;
-}
+} 
 
-.product-price{
+.product-img {
+  width: 150px;
+  height: 150px;
+}
+.product-price {
   font-size: 50px;
-  text-align: center;
 }
 
 button {
-  
+text-align: center;
   width: 100px;
   height: 100px;
+}
+.button{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 
