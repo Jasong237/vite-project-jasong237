@@ -27,7 +27,7 @@ const kitchen = products.filter((product) => product.category === "Kitchen");
 function click(event) {
   event.preventDefault();
   document.querySelector(".container").innerHTML = "";
-  addCard(kitchen);
+  addProducts(kitchen);
 }
 
 /* function kitchenOnly() {
