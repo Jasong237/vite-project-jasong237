@@ -8,6 +8,7 @@ const DOMSelectors = {
   button2: document.querySelector(".theme2"),
   button3: document.querySelector(".electronics"),
   button4: document.querySelector(".clothing"),
+  bg: document.querySelector(".body"),
 };
 
 export { DOMSelectors };

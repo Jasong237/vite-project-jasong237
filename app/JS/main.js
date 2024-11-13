@@ -26,6 +26,7 @@ function themeone(event) {
   document.querySelector(".container").innerHTML = "";
   products.forEach((product) => {
     addThemeOne(product);
+    addBackgroundOne();
   });
 }
 
@@ -38,6 +39,10 @@ function addThemeOne(product) {
         <h2 class="product-price"> Price: $${product.price} </h2>
       </div>`
   );
+}
+
+function addBackgroundOne() {
+  DOMSelectors.bg.insertAdjacentHTML("beforeend", `<div class="bgc"></div>`);
 }
 
 function themetwo(event) {
