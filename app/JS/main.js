@@ -21,18 +21,70 @@ function addCard(product) {
 
 addProducts();
 
-function click(event) {
+function themeone(event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+  products.forEach((product) => {
+    addThemeOne(product);
+  });
+}
+
+function addThemeOne(product) {
+  DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card" id="cardthemeone"> 
+        <h2 class="product-name" id="${product.name}"> ${product.name} </h2>
+        <img class="product-img" src="${product.image}" alt="${product.name}"
+        <h2 class="product-price"> Price: $${product.price} </h2>
+      </div>`
+  );
+}
+
+function themetwo(event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+  products.forEach((product) => {
+    addThemeTwo(product);
+  });
+}
+
+function addThemeTwo(product) {
+  DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card" id="cardthemetwo"> 
+        <h2 class="product-name" id="${product.name}"> ${product.name} </h2>
+        <img class="product-img" src="${product.image}" alt="${product.name}"
+        <h2 class="product-price"> Price: $${product.price} </h2>
+      </div>`
+  );
+}
+
+function electronics(event) {
   event.preventDefault();
   document.querySelector(".container").innerHTML = "";
 
   products.forEach((product) => {
-    if (product.category === "Kitchen") {
+    if (product.category === "Electronics") {
       addCard(product);
     }
   });
 }
 
-DOMSelectors.button.addEventListener("click", click);
+function clothing(event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+
+  products.forEach((product) => {
+    if (product.category === "Clothing") {
+      addCard(product);
+    }
+  });
+}
+
+DOMSelectors.button1.addEventListener("click", themeone);
+DOMSelectors.button2.addEventListener("click", themetwo);
+DOMSelectors.button3.addEventListener("click", electronics);
+DOMSelectors.button4.addEventListener("click", clothing);
 
 /* function kitchenOnly() {
   const kitchen = products.forEach((product) => {

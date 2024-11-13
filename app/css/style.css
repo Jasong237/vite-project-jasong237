@@ -71,8 +71,16 @@ button {
   height: 100px;
   margin: 5px; 
 }
-#theme1{
-  text-align: center;
+
+#cardthemeone {
+  border: 15px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+
+}
+
+#cardthemetwo {
+  border: 15px solid rgb(221, 53, 53);
+  background-color: rgb(201, 51, 51);
 }
 
 
