@@ -4,7 +4,7 @@ const DOMSelectors = {
   name: document.querySelector(".name"),
   price: document.querySelector(".price"),
   category: document.querySelector(".category"),
-  button: document.querySelector("button"),
+  button: document.querySelector(".theme1"),
 };
 
 export { DOMSelectors };

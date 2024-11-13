@@ -21,14 +21,18 @@ function addCard(product) {
 
 addProducts();
 
-DOMSelectors.button.addEventListener("click", click);
-
-const kitchen = products.filter((product) => product.category === "Kitchen");
 function click(event) {
   event.preventDefault();
   document.querySelector(".container").innerHTML = "";
-  addProducts(kitchen);
+
+  products.forEach((product) => {
+    if (product.category === "Kitchen") {
+      addCard(product);
+    }
+  });
 }
+
+DOMSelectors.button.addEventListener("click", click);
 
 /* function kitchenOnly() {
   const kitchen = products.forEach((product) => {

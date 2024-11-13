@@ -52,15 +52,24 @@ html, body, * {
   font-size: 50px;
 }
 
-button {
-text-align: center;
-  width: 100px;
-  height: 100px;
+.button-container{
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.button{
+.button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  margin: 5px; 
 }
 #theme1{
   text-align: center;
