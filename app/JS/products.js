@@ -2,13 +2,13 @@ const products = [
   {
     name: "Smartphone",
     price: 799,
-    image: "smartphone.webp",
+    image: "smartphone.png",
     category: "Electronics",
   },
   {
     name: "Headphones",
     price: 149,
-    image: "headphones.jpg",
+    image: "headphones.png",
     category: "Electronics",
   },
   {
@@ -20,92 +20,105 @@ const products = [
   {
     name: "Laptop",
     price: 1299,
-    image: "laptop.jpg",
+    image: "laptop.png",
     category: "Electronics",
   },
   {
     name: "Leather Wallet",
     price: 39.99,
-    image: "wallet.webp",
+    image: "wallet.png",
     category: "Accessories",
   },
   {
     name: "Cap",
     price: 89.99,
-    image: "cap.jpg",
+    image: "cap.png",
     category: "Accessories",
   },
   {
     name: "Sunglasses",
     price: 59.99,
-    image: "sunglasses.webp",
+    image: "sunglasses.png",
     category: "Accessories",
   },
   {
     name: "Messenger Bag",
     price: 79.99,
-    image: "bag.jpg",
+    image: "bag.png",
     category: "Accessories",
   },
   {
     name: "Electric Kettle",
     price: 39.99,
-    image: "kettle.jpg",
+    image: "kettle.png",
     category: "Kitchen",
   },
   {
     name: "Blender",
     price: 69.99,
-    image: "blender.jfif",
+    image: "blender.png",
     category: "Kitchen",
   },
   {
     name: "Air Fryer",
     price: 129.99,
-    image: "fryer.webp",
+    image: "fryer.png",
     category: "Kitchen",
   },
   {
     name: "Coffee Maker",
     price: 49.99,
-    image: "coffee.jpg",
+    image: "coffee.png",
     category: "Kitchen",
   },
   {
     name: "T-shirt",
     price: 19.99,
-    image: "tshirt.webp",
+    image: "tshirt.png",
     category: "Clothing",
   },
   {
     name: "Jeans",
     price: 39.99,
-    image: "jeans.jfif",
+    image: "jeans.png",
     category: "Clothing",
   },
   {
     name: "Sneakers",
     price: 79.99,
-    image: "sneakers.avif",
+    image: "sneakers.png",
     category: "Clothing",
   },
   {
     name: "Hoodie",
     price: 49.99,
-    image: "hoodie.webp",
+    image: "hoodie.png",
     category: "Clothing",
+  },
+  {
+    name: "Toaster",
+    price: 29.99,
+    image: "toaster.png",
+    category: "Kitchen",
+  },
+  {
+    name: "Microwave",
+    price: 89.99,
+    image: "microwave.png",
+    category: "Kitchen",
+  },
+  {
+    name: "Leather Boots",
+    price: 79.99,
+    image: "boots.png",
+    category: "Clothing",
+  },
+  {
+    name: "Desk Fan",
+    price: 19.99,
+    image: "fan.png",
+    category: "Electronics",
   },
 ];
 
-const electronics = products.filter(
-  (product) => product.category === "Electronics"
-);
-const accessories = products.filter(
-  (product) => product.category === "Accessories"
-);
-const clothing = products.filter((product) => product.category === "Clothing");
-const kitchen = products.filter((product) => product.category === "Kitchen");
-
-export { products, kitchen, clothing, accessories, electronics };
-
-console.log("Kitchen", kitchen);
+export { products };
