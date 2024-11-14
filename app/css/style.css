@@ -14,6 +14,7 @@ html, body, * {
 .title{
   text-align:center;
   font-size:100px;
+  color: rgb(98, 98, 98);
 }
 
 .container{
@@ -42,6 +43,7 @@ html, body, * {
  .product-name {
   font-size: 600%;
   text-align: center;
+  color: white;
 } 
 
  .product-img {
@@ -51,6 +53,7 @@ html, body, * {
  .product-price {
   font-size: 300%;
   text-align: center;
+  color: white;
 }
 
 .button-container{
