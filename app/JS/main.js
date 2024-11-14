@@ -13,7 +13,7 @@ function addCard(product) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
     `<div class="card"> 
-      <h2 class="product-name""> ${product.name} </h2>
+      <h2 class="product-name"> ${product.name} </h2>
     <img class="product-img" src="${product.image}" alt="${product.name}">
       <h2 class="product-price"> Price: $${product.price} </h2>
     </div>`
@@ -74,18 +74,33 @@ function addBackgroundTwo() {
   document.body.classList.add("bg-theme-two");
 }
 
-function electronics(event) {
+function themethree(event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+  theme = 0;
+  addBackgroundThree();
+  products.forEach((product) => {
+    addCard(product);
+  });
+}
+
+function addBackgroundThree() {
+  document.body.classList.remove("bg-theme-one");
+  document.body.classList.remove("bg-theme-two");
+}
+
+function kitchen(event) {
   event.preventDefault();
   document.querySelector(".container").innerHTML = "";
 
   products.forEach((product) => {
-    if (product.category === "Electronics" && theme === 0) {
+    if (product.category === "Kitchen" && theme === 0) {
       addCard(product);
     }
-    if (product.category === "Electronics" && theme === 1) {
+    if (product.category === "Kitchen" && theme === 1) {
       addThemeOne(product);
     }
-    if (product.category === "Electronics" && theme === 2) {
+    if (product.category === "Kitchen" && theme === 2) {
       addThemeTwo(product);
     }
   });
@@ -110,8 +125,9 @@ function clothing(event) {
 
 DOMSelectors.button1.addEventListener("click", themeone);
 DOMSelectors.button2.addEventListener("click", themetwo);
-DOMSelectors.button3.addEventListener("click", electronics);
-DOMSelectors.button4.addEventListener("click", clothing);
+DOMSelectors.button3.addEventListener("click", themethree);
+DOMSelectors.button4.addEventListener("click", kitchen);
+DOMSelectors.button5.addEventListener("click", clothing);
 
 // cd app
 // npm install
